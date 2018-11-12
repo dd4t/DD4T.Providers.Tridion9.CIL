@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:nuget="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DD4T.Providers.SDLWeb9.CIL</id>
+    <version></version>
+    <authors>DD4T Community</authors>
+    <owners>DD4T Community</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SDL Web 9 REST API Providers for DD4T</description>
+    <releaseNotes>
+    </releaseNotes>
+    <tags>SDLTridion Tridion SDL SDLWeb SDLWeb8 Web DD4T</tags>
+    <dependencies>
+      <dependency id="DD4T.Core" version="2.2.7" />
+      <dependency id="SDL.Web.Delivery.Private" version="11.0.0" />
+    </dependencies>
+  </metadata>
+</package>
