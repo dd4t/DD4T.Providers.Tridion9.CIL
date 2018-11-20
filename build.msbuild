@@ -11,11 +11,11 @@
 
 	<Target Name="Clean">
 		<!-- Clean removes all build artifacts to prepare for a new build. -->
-		<MSBuild Projects="$(MSBuildProjectDirectory)\source\DD4T.Providers.SDLWeb8.5.CIL.sln" Targets="Clean" />
+		<MSBuild Projects="$(MSBuildProjectDirectory)\source\DD4T.Providers.SDLWeb9.CIL.sln" Targets="Clean" />
 	</Target>
 	<Target Name="Compile">
 		<!-- Build the solution. -->
-		<MSBuild Projects="$(MSBuildProjectDirectory)\source\DD4T.Providers.SDLWeb8.5.CIL.sln" Targets="Build" Properties="Configuration=$(Configuration)" >
+		<MSBuild Projects="$(MSBuildProjectDirectory)\source\DD4T.Providers.SDLWeb9.CIL.sln" Targets="Build" Properties="Configuration=$(Configuration)" >
 			<Output ItemName="OutputFiles" TaskParameter="TargetOutputs"/>
         </MSBuild>
 	</Target>
