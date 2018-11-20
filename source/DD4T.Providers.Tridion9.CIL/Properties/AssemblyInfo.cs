@@ -4,9 +4,9 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DD4T.Providers.SDLWeb8.5.CIL")]
+[assembly: AssemblyTitle("DD4T.Providers.Tridion9.CIL")]
 [assembly: AssemblyProduct("DD4T")]
-[assembly: AssemblyDescription("Dynamic Delivery for SDL Web 8")]
+[assembly: AssemblyDescription("Dynamic Delivery provider for SDL Tridion Sites 9")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Open Source")]
 [assembly: AssemblyCopyright("Open Source Apache 2.0")]
