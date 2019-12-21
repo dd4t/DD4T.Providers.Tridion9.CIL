@@ -2,8 +2,8 @@
 
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/dd4t/DD4T.Providers.Tridion9.CIL?branch=develop&svg=true&passingText=develop)](https://ci.appveyor.com/project/DD4T/dd4t-providers-tridion9-cil)
 
-# DD4T.Providers.Web9.CIL
-DD4T Providers for SDL Web 9 Content Interaction Library
+# DD4T.Providers.Tridion9.CIL
+DD4T Providers for Tridion 9 Content Interaction Library
 
 ## Release 2.5
 
