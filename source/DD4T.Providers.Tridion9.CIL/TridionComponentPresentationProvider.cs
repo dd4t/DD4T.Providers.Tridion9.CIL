@@ -91,16 +91,24 @@ namespace DD4T.Providers.Tridion9.CIL
         /// <returns></returns>
         public List<string> GetContentMultiple(string[] componentUris)
         {
-//            TcmUri uri = new TcmUri(componentUris.First());
-            var components =
-                componentUris
-                .Select(componentUri => { TcmUri uri = new TcmUri(componentUri); return (T.ComponentPresentation)GetComponentPresentationFactory(uri.PublicationId).FindAllComponentPresentations(componentUri)[0]; })
-                .Where(cp => cp != null)
-                .Select(cp => cp.Content)
-                .ToList();
+            List<string> componentsContent = new List<string>();
 
-            return components;
+            foreach (var componentUri in componentUris)
+            {
+                TcmUri uri = new TcmUri(componentUri);
+                var componentPresentations = GetComponentPresentationFactory(uri.PublicationId).FindAllComponentPresentations(componentUri);
 
+                if (componentPresentations.Count > 0)
+                {
+                    var cp = (T.ComponentPresentation)componentPresentations[0];
+
+                    if (cp != null)
+                    {
+                        componentsContent.Add(cp.Content);
+                    }
+                }
+            }
+            return componentsContent;
         }
          
         public IList<string> FindComponents(IQuery query)
